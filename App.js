@@ -4,12 +4,14 @@ import {createBottomTabNavigator} from 'react-navigation-tabs'
 import {createAppContainer} from 'react-navigation'
 import Fb from './screens/fb'
 import Ins from './screens/ins'
+import AppHeader from './AppHeader'
 
 export default function App() {
   
   
   return (
     <View style={styles.container} >
+      <AppHeader/>
       <AppContainer/>
       
     </View>
@@ -19,15 +21,15 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+  
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    marginTop:700
   },
 });
 const TabNavigator=createBottomTabNavigator({
-  Fb:{screen:Fb},
-  Ins:{screen:Ins},
+  Facebook:{screen:Fb},
+  Instagram:{screen:Ins},
 })
 
 const AppContainer = createAppContainer(TabNavigator);
