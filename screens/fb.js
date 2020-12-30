@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default class Fb extends React.Component{
     render(){
         return(
-            <View>
+            <View style={styles.cont}>
              <Text style={styles.text}>
                  Facebook page
              </Text>
@@ -15,12 +15,12 @@ export default class Fb extends React.Component{
 
 const styles = StyleSheet.create({
     text:{
-        textAlign:'center', fontSize: 20, marginTop:300
+        textAlign:'center', fontSize: 20, marginTop:150
     },
-
-    imgIcon:{
-        width:200,
-        height:200,
-        alignSelf:'center'
+    cont:{
+        alignSelf:'center',
+        justifyContent:'center',
     }
+
+    
 })

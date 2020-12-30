@@ -14,6 +14,7 @@ class AppHeader extends React.Component{
 const styles = StyleSheet.create({
   textContainer:{
     backgroundColor: 'lime',
+    marginTop:-700
   },
   text:{
     color: 'white',
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     textAlign: 'center',
-    
+   
   }
 });
 

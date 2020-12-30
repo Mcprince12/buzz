@@ -17,9 +17,5 @@ const styles = StyleSheet.create({
         textAlign:'center', fontSize: 20, marginTop:200
     },
 
-    imgIcon:{
-        width:200,
-        height:200,
-        alignSelf:'center'
-    }
+  
 })
